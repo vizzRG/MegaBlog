@@ -11,7 +11,7 @@ export class Service {
         this.client
         .setEndpoint(conf.appwriteURL)
         .setProject(conf.appwriteProjectId)
-        this.account= new Account(this.client)
+        // this.account= new Account(this.client)
         this.databases = new Databases(this.client);
         this.bucket = new Storage(this.client);
     }
